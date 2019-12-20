@@ -1,0 +1,20 @@
+.red-title {
+    font-family: $black-font;
+    font-size: 36px;
+    line-height: 44px;
+    color: $red;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+    .red-title {
+        font-size: 48px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .red-title {
+        font-size: 68px;
+    }
+}

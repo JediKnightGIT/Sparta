@@ -1,0 +1,168 @@
+.intro {
+    margin-bottom: 50px;
+    padding-bottom: 150px;
+}
+
+.intro__subtitle {
+    &::before {
+        content: '';
+
+        position: absolute;
+        left: -42px;
+        top: 9px;
+
+        width: 100%;
+        height: 14px;
+
+        background-image: url("../img/intro/blur-mobile.png");
+
+        background-position: 0 0;
+
+    }
+    position: relative;
+
+    margin-top: 0;
+    margin-bottom: 25px;
+
+    font-family: $main-font;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 10px;
+    color: $white;
+}
+
+.intro__title {
+    &--red {
+        display: block;
+
+        font-family: $secondary-font;
+        font-size: 102px;
+        line-height: 90px;
+        letter-spacing: 3px;
+        color: $red;
+
+        text-shadow: -0.279px 3.99px 7.92px rgba(0, 0, 0, 0.34);
+    }
+    margin-top: 0;
+    margin-bottom: 35px;
+
+    font-family: $black-font;
+    color: $white;
+    font-size: 38px;
+    line-height: 47px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.intro__days-wrapper {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 50px;
+}
+
+.intro__days {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 11px;
+
+    width: 205px;
+    min-height: 40px;
+
+    font-family: $black-font;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: $black;
+
+    background-image: url("../img/intro/days.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.intro__day {
+    &:last-of-type {
+        margin-right: 0;
+    }
+    display: inline-block;
+    margin-left: 11px;
+    margin-right: 49px;
+    margin-top: 9px;
+}
+
+.intro__days-info {
+    margin: 0;
+    width: 75px;
+
+    font-family: $light-font;
+    font-size: 13px;
+    line-height: 16px;
+    color: $white;
+}
+
+.intro__button {
+    margin-left: -10px;
+    margin-right: -15px;
+}
+
+@media (min-width: $tablet-width) {
+    .intro__subtitle {
+        &::before {
+            left: -95px;
+            width: 351px;
+
+            background-image: url("../img/intro/blur-tablet.png");
+
+        }
+        position: absolute;
+        left: 50%;
+        top: 25px;
+        transform: translateX(-50%);
+    }
+
+    .intro__title {
+        &--red {
+            font-size: 107px;
+        }
+        margin-bottom: 30px;
+        
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .intro__days-wrapper {
+        justify-content: center;
+    }
+
+    .intro__days {
+        margin-right: 35px;
+    }
+    
+    .intro__button {
+        display: block;
+        margin: auto;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .intro__subtitle {
+        top: 40px;
+        font-size: 18px;
+    }
+
+    .intro__title {
+        &--red {
+            font-size: 180px;
+            line-height: 180px;
+        }
+        font-size: 68px;
+        text-align: left;
+    }
+
+    .intro__days-wrapper {
+        justify-content: left;
+    }
+
+    .intro__button {
+        display: inline-block;
+    }
+}
