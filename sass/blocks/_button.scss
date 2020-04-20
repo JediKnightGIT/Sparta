@@ -1,18 +1,21 @@
 .button {
+    width: 290px;
+
     padding-top: 20px;
     padding-bottom: 30px;
     padding-left: 110px;
     padding-right: 115px;
-    // width: 307px;
-    // height: 73px;
-
+    
     color: $white;
-
+    
     background-color: $red;
     background: url("../img/button/button.png") no-repeat 0 0;
+    background-size: contain;
     border: none;
 
     font-family: $black-font;
     font-size: 18px;
+    text-transform: uppercase;
+    
     cursor: pointer;
 }

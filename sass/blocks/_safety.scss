@@ -1,0 +1,79 @@
+.safety {
+    margin-bottom: 60px;
+}
+
+.safety__title {
+    margin-bottom: 45px;
+
+    font-family: $black-font;
+    font-size: 30px;
+    line-height: 38px;
+    color: $red;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.safety__wrapper {
+    margin: auto;
+    width: 290px;
+    min-height: 467px;
+
+    background-image: url("../img/safety/beads-mobile.png");
+    background-repeat: no-repeat;
+}
+
+.safety__item {
+    width: 252px;
+    margin-bottom: 60px;
+    padding-left: 75px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.safety__item-text {
+    margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+    .safety__title {
+        font-size: 36px;
+        line-height: 42px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .safety {
+        margin-bottom: 130px;
+    }
+
+    .safety__title {
+        margin: auto;
+        margin-bottom: 70px;
+        width: 750px;
+    }
+
+    .safety__wrapper {
+        display: flex;
+
+        padding-top: 75px;
+
+        width: auto;
+        min-height: auto;
+        
+        background-image: url("../img/safety/beads-desktop.png");
+    }
+
+    .safety__item {
+        margin-bottom: 0;
+        margin-right: 65px;
+        padding-left: 0;
+
+        width: 180px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

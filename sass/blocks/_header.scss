@@ -1,4 +1,5 @@
 .page-header {
+    position: relative;
     margin-bottom: 45px;
 }
 
@@ -27,7 +28,7 @@
     justify-content: space-between;
     align-items: center;
 
-    margin-top: 10px;
+    padding-top: 10px;
 }
 
 .page-header__phone {
@@ -44,7 +45,6 @@
             min-height: 701px;
     
             background-image: url("../img/header/header-bg-tablet.png");
-            background-size: auto;
             background-position: -65px 0;
         }
     }
@@ -52,16 +52,15 @@
 
 @media (min-width: $desktop-width) {
     .page-header {
-        margin-bottom: 65px;
+        margin-bottom: 135px;
     }
 
     .page-header--bg {
         &::before {
-            min-height: 1170px;
+            min-height: 1000px;
     
             background-image: url("../img/header/header-bg-desktop.png");
-            background-size: contain;
-            background-position: 0 0;
+            background-position: center 0;
         }
     }
 

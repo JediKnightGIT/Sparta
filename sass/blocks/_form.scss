@@ -1,0 +1,126 @@
+.form-section {
+    margin-bottom: 25px;
+    padding-top: 85px;
+    padding-bottom: 135px;
+
+    height: 648px;
+
+    position: relative;
+    &::before {
+        content: '';
+
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        width: 100%;
+        height: 648px;
+
+        background-image: url("../img/form/bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center 0;
+        background-size: cover;
+        z-index: -1;
+    }
+}
+
+.form-section__wrapper {
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    width: 290px;
+}
+
+.form__title {
+    margin: 0;
+    margin-bottom: 30px;
+
+    font-family: $secondary-font;
+    font-size: 48px;
+    line-height: 48px;
+    color: $white;
+}
+
+.form__descr {
+    margin-top: 0;
+    margin-bottom: 40px;
+
+    color: $white;
+}
+
+.form__field-control {
+    padding: 15px 25px;
+
+    width: 100%;
+
+    background-color: rgba(255, 255, 255, 0.102);
+    border: none;
+    border-radius: 23px;
+
+    &::placeholder {
+        color: $white;
+      }
+    
+    &--name {
+        margin-bottom: 30px;
+    }
+    &--phone {
+        margin-bottom: 45px;
+    }
+}
+
+.form__button {
+    display: block;
+    margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+    .form-section {
+        margin-bottom: 10px;
+        padding-top: 75px;
+        padding-bottom: 145px;
+    }
+
+    .form-section__wrapper {
+        padding: 0;
+        width: 375px;
+    }
+
+    .form__title {
+        margin-bottom: 40px;
+
+        font-size: 65px;
+        line-height: 65px;
+    }
+
+    .form__descr {
+        margin-bottom: 45px;
+    }
+
+    .form__field-control {
+        &--name {
+            margin-bottom: 20px;
+        }
+        &--phone {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .form-section {
+        padding-top: 175px;
+        padding-bottom: 265px;
+
+        height: 889px;
+
+        &::before {
+            height: 889px;
+        }
+    }
+
+    .form-section__wrapper {
+        width: 390px;
+    }
+}

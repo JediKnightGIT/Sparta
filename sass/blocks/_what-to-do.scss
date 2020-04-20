@@ -1,0 +1,183 @@
+.what-to-do {
+    margin-bottom: 90px;
+}
+
+.what-to-do__title {
+    margin: 0 auto;
+    width: 290px;
+
+    position: relative;
+    &::before {
+        content: 'Ты узнаешь';
+        margin-left: -15px;
+        margin-right: -15px;
+        
+        position: absolute;
+        left: -140px;
+        top: 10px;
+        right: 0;
+        bottom: 0;
+        
+        min-width: 100%;
+        
+        font-family: $secondary-font;
+        font-size: 100px;
+        line-height: 90px;
+        color: rgba($color: #32383f, $alpha: .1);
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        text-align: center;
+        white-space: nowrap;
+
+        z-index: -1;
+        overflow: hidden;
+    }
+}
+
+.what-to-do__list {
+    @include reset-list;
+    width: 290px;
+    margin: auto;
+
+    text-align: center;
+}
+
+.what-to-do__item {
+    padding-top: 170px;
+
+    position: relative;
+    &::before {
+        content: '';
+
+        position: absolute;
+
+        width: 115px;
+        height: 95px;
+
+        top: 50px;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        background-image: url("../img/what-to-do/1.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    &:nth-child(2)::before {
+        background-image: url("../img/what-to-do/2.png");
+    }
+    &:nth-child(3)::before {
+        background-image: url("../img/what-to-do/3.png");
+    }
+    &:nth-child(4)::before {
+        background-image: url("../img/what-to-do/4.png");
+    }
+    &:nth-child(5)::before {
+        background-image: url("../img/what-to-do/5.png");
+    }
+}
+
+
+.what-to-do__item-title {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.what-to-do__item-descr {
+    margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+    .what-to-do {
+        margin-bottom: 85px;
+    }
+
+    .what-to-do__title {
+        width: auto;
+        margin: 0;
+        margin-bottom: 70px;
+
+        line-height: 160px;
+        letter-spacing: 3px;
+        &::before {
+            left: 0;
+            top: 10px;
+
+            font-size: 120px;
+            line-height: 160px;
+            letter-spacing: 6px;
+        }
+    }
+
+    .what-to-do__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        width: 720px;
+
+        text-align: left;
+    }
+
+    .what-to-do__item {
+        margin-right: 45px;
+        width: 315px;
+
+        &::before {
+            left: 0;
+            transform: translateX(0);
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .what-to-do {
+        margin-bottom: 130px;
+    }
+
+    .what-to-do__title {
+        line-height: 225px;
+        &::before {
+            margin-left: 0;
+            margin-right: 0;
+            top: 49px;
+
+            font-size: 180px;
+            letter-spacing: 6px;
+        }
+    }
+
+    .what-to-do__list {
+        justify-content: space-between;
+        align-items: center;
+
+        width: 1140px;
+    }
+
+    .what-to-do__item {
+        margin-right: 0;
+        padding-top: 0;
+        padding-left: 205px;
+        width: 520px;
+
+        &::before {
+            top: auto;
+
+            width: 165px;
+            height: 139px;
+        }
+
+        &:nth-child(2n+1) {
+            margin-bottom: 115px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cпецкурс - выжить любой ценой. Sparta</title>
-    <link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="page">
 
@@ -59,29 +59,41 @@
                 <div class="expectations__wrapper">
                     <span class="expectaions__start">Start</span>
                     <div class="expectations__item">
-                        <h3 class="expectations__item-title">Спецзнания</h3>
+                        <div class="expectations__skill expectations__skill--first">
+                            <h3 class="expectations__item-title">Спецзнания</h3>
                         <p class="expectations__item-descr">За 3 дня спецкурса вы получите знания, 
                             которым обучают военных, альпинистов, 
                             спасателей</p>
+                        </div>
+                        <!-- /.expectations__skill -->
                     </div>
                     <div class="expectations__item">
-                        <h3 class="expectations__item-title">Спецнавыки</h3>
-                        <p class="expectations__item-descr">3 дня в лесу, без палаток, зажигалок 
-                            и любых других гаджетов, которые 
-                            облегчали бы жизнь</p>
+                        <div class="expectations__skill expectations__skill--second">
+                            <h3 class="expectations__item-title">Спецнавыки</h3>
+                            <p class="expectations__item-descr">3 дня в лесу, без палаток, зажигалок 
+                                и любых других гаджетов, которые 
+                                облегчали бы жизнь</p>
+                        </div>
+                        <!-- /.expectations__skill -->
                     </div>
                     <div class="expectations__item">
-                        <h3 class="expectations__item-title">Экстрим</h3>
-                        <p class="expectations__item-descr">Смоделированные экстремальные
-                            ситуации, максимально приближенные к реальности. Вам придётся спасать
-                            утопающих из воды, спускаться по верёвке по отвесным скалам, добывать воду, жить в шалашах и землянках</p>
+                        <div class="expectations__skill expectations__skill--third">
+                            <h3 class="expectations__item-title">Экстрим</h3>
+                            <p class="expectations__item-descr">Смоделированные экстремальные
+                                ситуации, максимально приближенные к реальности. Вам придётся спасать
+                                утопающих из воды, спускаться по верёвке по отвесным скалам, добывать воду, жить в шалашах и землянках</p>
+                        </div>
+                        <!-- /.expectations__skill -->
                     </div>
                     <div class="expectations__item">
-                        <h3 class="expectations__item-title">Постоянный стресс</h3>
-                        <p class="expectations__item-descr">Участникам предстоит преодолевая 
-                            себя действовать в стрессовой 
-                            обстановке, применять на практике 
-                            полученные ранее знания</p>
+                        <div class="expectations__skill expectations__skill--fourth">
+                            <h3 class="expectations__item-title">Постоянный стресс</h3>
+                            <p class="expectations__item-descr">Участникам предстоит преодолевая 
+                                себя действовать в стрессовой 
+                                обстановке, применять на практике 
+                                полученные ранее знания</p>
+                        </div>
+                        <!-- /.expectations__skill -->
                     </div>
                     <span class="expectations__finish">Finish</span>
 
@@ -94,34 +106,38 @@
 
         <section class="course">
             <div class="container">
-                <div class="course__first-column">
-                    <div class="course__item">
-                        <h2 class="course__title">Что даёт наш  спецкурс</h2>
+                <div class="course__first-row">
+                    <div class="course__heading">
+                        <h2 class="course__title">Что даёт наш спец-курс</h2>
                     </div>
-                    <div class="course__item">
-                        <h3 class="course__subtitle">Базовые знания</h3>
-                        <p class="course__descr">Вы научитесь не допускать и предотвращать попадание человека в опасные ситуации на природе и в городе</p>
+                    <div class="course__first-items-wrapper">
+                        <div class="course__item course__item--basic">
+                            <h3 class="course__subtitle course__subtitle--basic">Базовые знания</h3>
+                            <p class="course__descr">Вы научитесь не допускать и предотвращать попадание человека в опасные ситуации на природе и в городе</p>
+                        </div>
+                        <div class="course__item course__item--skills">
+                            <h3 class="course__subtitle course__subtitle--skills">Важные навыки</h3>
+                            <p class="course__descr">Получите не только все базовые знания, но и навыки, которые могут спасти жизнь и здоровье, как своё, так и родных, близких и людей вокруг</p>
+                        </div>
                     </div>
-                    <div class="course__item">
-                        <h3 class="course__subtitle">Важные навыки</h3>
-                        <p class="course__descr">Получите не только все базовые знания, но и навыки, которые могут спасти жизнь и здоровье, как своё, так и родных, близких и людей вокруг</p>
-                    </div>
+                    <!-- /.course__items-wrapper -->
                 </div>
-                <!-- /.course__first-column -->
-                <div class="course__second-column">
-                    <div class="course__item">
-                        <span class="course__attention">Чего  не будет</span>
+                <!-- /.course__first-row -->
+                <div class="course__second-row">
+                    <span class="course__attention">Чего <br> не будет</span>
+                    <div class="course__second-items-wrapper">
+                        <div class="course__item course__item--boredom">
+                            <h3 class="course__subtitle course__subtitle">Нет скуке!</h3>
+                            <p class="course__descr">Не будет скучной и нудной теории. Курс состоит на 80% из практики и только на 20% из теории!</p>
+                        </div>
+                        <div class="course__item course__item--chaos">
+                            <h3 class="course__subtitle course__subtitle">И вакханалиям</h3>
+                            <p class="course__descr">Никаких песен у костра  и алкопоходов. Только хардкор!</p> 
+                        </div>
                     </div>
-                    <div class="course__item">
-                        <h3 class="course__subtitle">Нет скуке!</h3>
-                        <p class="course__descr">Не будет скучной и нудной теории. Курс состоит на 80% из практики и только на 20% из теории!</p>
-                    </div>
-                    <div class="course__item">
-                        <h3 class="course__subtitle">И вакханалиям</h3>
-                        <p class="course__descr">Никаких песен у костра  и алкопоходов. Только хардкор!</p> 
-                    </div>
+                    <!-- /.course__second-items-wrapper -->
                 </div>
-                <!-- /.course__second-column -->
+                <!-- /.course__second-row -->
             </div>
             <!-- /.container -->
         </section>
@@ -133,10 +149,11 @@
                 <ul class="what-to-do__list">
                     <li class="what-to-do__item">
                         <h3 class="what-to-do__item-title">Если заблудился</h3>
-                        <p class="what-to-do__item-descr">Как быть, если заблудился и остался один в лесу, как не умереть от голода и холода, сделать себе ночлег, развести огонь без спичек.</p>
+                        <p class="what-to-do__item-descr">Как быть, если заблудился и остался один в лесу, как не умереть от голода и холода, сделать себе ночлег, развести огонь без спичек.</p>
                     </li>
                     <li class="what-to-do__item">
-                        <h3 class="what-to-do__item-title">Как вести себя в экстремальной ситуации при встрече с лесными животными, даже если «вон та киса» выглядит такой мирной.</p>
+                        <h3 class="what-to-do__item-title">Если встретил диких зверей</h3>
+                        <p class="what-to-do__item-descr">Как вести себя в экстремальной ситуации при встрече с лесными животными, даже если «вон та киса» выглядит такой мирной.</p>
                     </li>
                     <li class="what-to-do__item">
                         <h3 class="what-to-do__item-title">Если нужна первая помощь</h3>
@@ -144,7 +161,7 @@
                     </li>
                     <li class="what-to-do__item">
                         <h3 class="what-to-do__item-title">Если оказался в воде</h3>
-                        <p class="what-to-do__item-descr">Как спасти утопающего. Как не замёрзнуть и просушить одежду. Как подать сигнал SOS.</p>
+                        <p class="what-to-do__item-descr">Как спасти утопающего. Как не замёрзнуть и просушить одежду. Как подать сигнал SOS.</p>
                     </li>
                     <li class="what-to-do__item">
                         <h3 class="what-to-do__item-title">Если грозит опасность</h3>
@@ -164,24 +181,24 @@
                 <!-- /.safety__title -->
                 <div class="safety__wrapper">
                     <div class="safety__item">
-                        <span class="safety__item-number">1</span>
-                        <p class="safety__item-text">Блок по автомобильной безопасности.</p>
+                        <span class="safety__item-number visually-hidden">1</span>
+                        <p class="safety__skill">Блок по автомобильной безопасности.</p>
                     </div>
                     <div class="safety__item">
-                        <span class="safety__item-number">2</span>
-                        <p class="safety__item-text">Народные волнения, давки, теракты.</p>
+                        <span class="safety__item-number visually-hidden">2</span>
+                        <p class="safety__skill">Народные волнения, давки, теракты.</p>
                     </div>
                     <div class="safety__item">
-                        <span class="safety__item-number">3</span>
-                        <p class="safety__item-text">Техногенные и природные катастрофы.</p>
+                        <span class="safety__item-number visually-hidden">3</span>
+                        <p class="safety__skill">Техногенные и природные катастрофы.</p>
                     </div>
                     <div class="safety__item">
-                        <span class="safety__item-number">4</span>
-                        <p class="safety__item-text">Что должно быть в EDC наборе.</p>
+                        <span class="safety__item-number visually-hidden">4</span>
+                        <p class="safety__skill">Что должно быть в EDC наборе.</p>
                     </div>
                     <div class="safety__item">
-                        <span class="safety__item-number">5</span>
-                        <p class="safety__item-text">Как действовать во время пожара?</p>
+                        <span class="safety__item-number visually-hidden">5</span>
+                        <p class="safety__skill">Как действовать во время пожара?</p>
                     </div>
                 </div>
                 <!-- /.safety__wrapper -->
@@ -193,7 +210,11 @@
         <section class="try">
             <div class="container">
                 <div class="try__wrapper">
-                    <h2 class="try__title">Испытай себя на прочность</h2>
+                    <div class="try__text">
+                        <h2 class="try__title">Испытай</h2>
+                        <span class="try__title-ext">себя на прочность</span>
+                    </div>
+                    <!-- /.try__text -->
                     <button class="button try__button" type="button">Рискнуть</button>
                 </div>
                 <!-- /.try__wrapper -->
@@ -205,7 +226,7 @@
         <section class="skill">
             <div class="container">
                 <h2 class="skill__title red-title">Ты приобретешь навык</h2>
-                <p class="skill__wrapper">
+                <div class="skill__wrapper">
                     <p class="skill__item">Освоишь больше
                             десятка узлов
                     </p>
@@ -262,10 +283,15 @@
                         </li>
                     </ul>
                     <!-- /.program__list -->
-                    <span class="program__submit">Записаться и</span>
-                    <button class="button program__button" type="button">Рискнуть</button>
+                   <div class="program__submit-wrapper">
+                        <span class="program__submit">Записаться и</span>
+                        <button class="button program__button" type="button">Рискнуть</button>
+                   </div>
+                   <!-- /.program__submit-wrapper -->
                 </div>
                 <!-- /.program__wrapper -->
+                <p class="program__photo"></p>
+                <!-- /.program__photo -->
             </div>
             <!-- /.container -->
         </section>
@@ -274,53 +300,34 @@
         <section class="instructor">
             <div class="container">
                 <h2 class="instructor__title red-title">Инструктор</h2>
-                <img src="#" alt="Роман Попков фото" class="instructor__image">
-                <h3 class="instructor__name">Роман Попков</h3>
-                <div class="instructor__skills">
-                    <div class="instructor__first-column">
-                        <div class="instructor__item">
-                            <p class="instructor__item-text">Альпинист</p>
+                    <div class="instructor__wrapper">
+                    <img src="img/instructor/photo.jpg" width="290" height="290" alt="Роман Попков фото" class="instructor__image">
+                    <div class="instructor__bio">
+                        <h3 class="instructor__name">Роман Попков</h3>
+                        <div class="instructor__first-row">
+                            <p class="instructor__skill instructor__skill--first">Альпинист</p>
+                            <p class="instructor__skill instructor__skill--first">8 восхождений на Эльбрус (Западная и Восточная    вершины), восхождение на Монблан. Неоднократно принимал участие в спасательных работах в горах. Спас   двоих человек на вершине Эльбруса в снежную бурю</p>
+                            <p class="instructor__skill instructor__skill--first">Обучался у военных, горных и инструкторов по  туризму</p>
                         </div>
-                        <div class="instructor__item">
-                            <p class="instructor__item-text">8 восхождений на Эльбрус (Западная и Восточная вершины), восхождение на Монблан. Неоднократно принимал участие в спасательных работах в горах. Спас двоих человек на вершине Эльбруса в снежную бурю</p>
+                        <!-- /.instructor__first-row -->
+                        <div class="instructor__second-row">
+                            <p class="instructor__skill instructor__skill--second">Обучался в центре подготовки спасателей</p>
+                            <p class="instructor__skill instructor__skill--second">Инструктор по первой помощи по программе     Красного Креста</p>
+                            <p class="instructor__skill instructor__skill--second">Обучение и  подготовка в Центре медицины     катастроф</p>
+                            <p class="instructor__skill instructor__skill--second">Дайвер</p>
                         </div>
-                        <div class="instructor__item">
-                            <p class="instructor__item-text">Обучался у военных, горных и инструкторов по туризму</p>
-                        </div>
+                        <!-- /.instructor__second-row -->
                     </div>
-                    <!-- /.instructor__first-column -->
-                    <div class="instructor__second-column">
-                        <div class="instructor__item">
-                            <p class="instructor__item-text">Обучался в центре подготовки спасателей</p>
-                        </div>
-                        <div class="instructor__item">
-                            <p class="instructor__item-text">Инструктор по первой помощи по программе Красного Креста</p>
-                        </div>
-                        <div class="instructor__item">
-                            <p class="instructor__item-text">Обучение и  подготовка в Центре медицины катастроф</p>
-                        </div>
-                        <div class="instructor__item">
-                            <p class="instructor__item-text">Дайвер</p>
-                        </div>
+                    <!-- /.instructor__bio -->
+                    <div class="instructor__third-row">
+                        <p class="instructor__achievement">Спарт провел в качестве капитана</p>
+                        <p class="instructor__achievement">прыжков с веревкой (Rope Jumping)</p>
+                        <p class="instructor__achievement">Спарт организовал (максимальный поток 68 чел.)</p>
+                        <p class="instructor__achievement">боёв в Бойцовском Клубе</p>
                     </div>
-                    <!-- /.instructor__second-column -->
-                    <div class="instructor__third-column">
-                        <div class="instructor__skill">
-                            <p class="instructor__skill-text">Спарт провел в качестве капитана</p>
-                        </div>
-                        <div class="instructor__skill">
-                            <p class="instructor__skill-text">Спарт организовал (максимальный поток68 чел.)</p>
-                        </div>
-                        <div class="instructor__skill">
-                            <p class="instructor__skill-text">прыжков с веревкой (Rope Jumping)</p>
-                        </div>
-                        <div class="instructor__skill">
-                            <p class="instructor__skill-text">боёв в Бойцовском Клубе</p>
-                        </div>
-                    </div>
-                    <!-- /.instructor__third-column -->
+                    <!-- /.instructor__third-row -->
                 </div>
-                <!-- /.instructor__skills -->
+                <!-- /.instructor__wrapper -->
             </div>
             <!-- /.container -->
         </section>
@@ -329,7 +336,11 @@
         <section class="try">
                 <div class="container">
                     <div class="try__wrapper">
-                        <h2 class="try__title">Испытай себя на прочность</h2>
+                        <div class="try__text">
+                            <h2 class="try__title">Испытай</h2>
+                            <span class="try__title-ext">себя на прочность</span>
+                        </div>
+                        <!-- /.try__text -->
                         <button class="button try__button" type="button">Рискнуть</button>
                     </div>
                     <!-- /.try__wrapper -->
@@ -341,20 +352,30 @@
             <section class="reviews">
                 <div class="container">
                     <h2 class="reviews__title red-title">Отзывы</h2>
-                    <iframe src="https://www.youtube.com/watch?v=aMYWZRQ4lJU" frameborder="0" class="reviews__video"></iframe>
+                    <!-- <iframe src="https://www.youtube.com/watch?v=aMYWZRQ4lJU" frameborder="0" class="reviews__video"></iframe> -->
+                    <img src="img/reviews/video.jpg" width="290" height="162" alt="Видео отзыв" class="reviews__video">
                     <div class="reviews__slider">
-                        <img src="#" alt="Дмитрий Весна фото" class="reviews__photo">
+                        <img src="img/reviews/photo.png" width="117" height="156" alt="Дмитрий Весна фото" class="reviews__photo">
                         <div class="reviews__text-wrapper">
                             <span class="reviews__author">Дмитрий Весна</span>
                             <p class="reviews__text">
-                                    Я, Выжил!!!! Такого треша в жизни у меня не было. Не думал даже, что на такое способен в последнее время. Ни какое КМБ и прочее с этим не сравнится. Каждый день плавать в одежде в речках (а это Мурманск детка), спать по 2 часа или совсем не спать, потому что надо совершать марш броски с пострадавшим в 140 кг. ,освоить альпинизм и совершать самостоятельные спуски и подъемы с крутых скал за 1 день, делать носилки за 5 минут из подручных средств, есть ягоды по пол дня, потому что другой еды нет, пить только из речки, ходить босиком по лесу весь день, делать укрытия, о которых даже в детстве не мечтал, спать под открытым небом без спальников... и палаток, и постоянно кого то спасать, оказывать первую помощь, учиться быстро договариваться с людьми, которых видишь первый день, а также работать в команде с ними..., потому что ваши Жизни, только в Ваших правильных действиях, быстрой реакции и конечно руках. Не перечислить все, что происходило, т.к. оно происходило постоянно. Когда только хотелось выдохнуть и сказать вот сейчас небольшой отдых, сейчас посплю в тепле и наконец, надену сухие носки, начинался Ад!!! 
-                                    Столько опыта получил за три дня, что за всю жизнь не получал такого, хоть и путешественник лютый. Пересмотрел многие моменты на подготовку к походам, снаряжению, одежде, выбору места для лагеря, безопасности, прогнозировать негативные ситуации, которые могут случиться в лесу и принимать превентивные меры, правильно и быстро принимать решения и многое другое. 
-                                    А самое главное найти в себе силы идти к цели, когда нет сил, хочется все послать, сдаться. Открыть в себе не только второе дыхание, а пятое или десятое уже. 
+                                Я, Выжил!!!! Такого треша в жизни у меня не было. Не думал даже, что на такое способен в последнее время. Ни какое КМБ и прочее с этим не сравнится. Каждый день плавать в одежде в речках (а это Мурманск детка), спать по 2 часа или совсем не спать, потому что надо совершать марш броски с пострадавшим в 140 кг. ,освоить альпинизм и совершать самостоятельные спуски и подъемы с крутых скал за 1 день, делать носилки за 5 минут из подручных средств, есть ягоды по пол дня, потому что другой еды нет, пить только из речки, ходить босиком по лесу весь день, делать укрытия, о которых даже в детстве не мечтал, спать под открытым небом без спальников... 
                             </p>
-                            <a href="#" class="reviews__full-review">Читать весь отзыв</a>
-
+                            <a href="#" class="reviews__full-review">Читать весь отзыв</a>   
                         </div>
                         <!-- /.reviews__text-wrapper -->
+                        <div class="reviews__control">
+                            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+                            <ul class="reviews__pagination">
+                                <li class="reviews__number reviews__number--current"><a href="#" class="reviews__link">1</a></li>
+                                <li class="reviews__number"><a href="#" class="reviews__link">2</a></li>
+                                <li class="reviews__number"><a href="#" class="reviews__link">3</a></li>
+                                <li class="reviews__number"><a href="#" class="reviews__link">4</a></li>
+                            </ul>
+                            <!-- /.reviews__pagination -->
+                            <button class="reviews__next" type="button">Следующий отзыв</button>
+                        </div>
+                        <!-- /.reviews__control -->
                     </div>
                     <!-- /.reviews__slider -->
                 </div>
@@ -364,29 +385,30 @@
 
             <section class="geography">
                 <h2 class="geography__title red-title">География проведения</h2>
-                <img src="#" alt="География проведения на карте" class="geography__map">
+                <p class="geography__map"></p>
             </section>
             <!-- /.geography -->
 
-            <section class="form">
-                <div class="form__wrapper">
+            <section class="form-section">
+                <div class="form-section__wrapper">
                     <h3 class="form__title">Есть вопросы?</h3>
                     <p class="form__descr">
                         Оставьте свой номер телефона, наши менеджеры с вами свяжутся и проконсультируют
                     </p>
                     <form action="POST" class="form__wrapper">
-                            <label class="form__field">
-                                <!-- <span class="form__field__name">Имя:*</span> -->
-                                <input class="form__field__control" type="text" placeholder="Имя" required="">
-                            </label>
-                            <label class="form__field">
-                                <!-- <span class="form__field__name">Вес (кг):*</span> -->
-                                <input class="form__field__control" type="number" placeholder="Телефон" required="">
-                            </label>
+                        <label class="form__field">
+                            <!-- <span class="form__field__name">Имя:*</span> -->
+                            <input class="form__field-control form__field-control--name" type="text" placeholder="Имя" required="">
+                        </label>
+                        <label class="form__field">
+                            <!-- <span class="form__field__name">Вес (кг):*</span> -->
+                            <input class="form__field-control form__field-control--phone" type="number" placeholder="Телефон" required="">
+                        </label>
                         <button type="submit" class="button form__button">Отправить</button>
                     </form>
                     <!-- /.form__wrapper -->
                 </div>
+                <!-- /.form__wrapper -->
             </section>
             <!-- /.form -->
     </main>
@@ -394,14 +416,13 @@
 
     <footer class="page-footer">
         <div class="container">
-            <a href="tel:79304150252" class="page-footer__phone">
-                <strong>+7 (930) 415 02 52</strong>
-            </a>
-            <!-- /.page-footer__phone -->
-            <a href="#" class="page-footer__policy">Политика конфиденциальности</a>
-            <img class="page-footer__logo-pic" src="img/footer/footer-logo.svg" width="156" height="56" alt="Спарта лого" class="page-footer__logo-image" >
-            <!-- /.page-footer__logo-pic -->
-            <span class="page-footer__copyright">© 2017</span>
+            <div class="page-footer__wrapper">
+                <a href="tel:79304150252" class="page-footer__phone">+7 (930) 415 02 52</a>
+                <a href="#" class="page-footer__policy">Политика конфиденциальности</a>
+                <img src="img/footer/footer-logo.svg" width="156" height="56" alt="Спарта лого" class="page-footer__logo" >
+                <span class="page-footer__copyright">© 2017-2020</span>
+            </div>
+            <!-- /.page-footer__wrapper -->
         </div>
         <!-- /.container -->
     </footer>
